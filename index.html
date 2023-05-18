@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    </meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    </meta>
+    <title>Zakat Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </meta>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"></link>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    </link>
+</head>
+
+<body>
+    <header>
+        <h3><i class="bi bi-cash-coin"></i> Zakat Calculator</h3>
+        <h3 class="urdu">زکوۃ کیلکولیٹر <i class="bi bi-calculator-fill"></i></h3>
+    </header>
+    <div class="instructions">
+        <a href="javascript:void(0)" onclick="showInstructions()">
+            <row>
+                <i class="bi bi-caret-down-fill black"></i>
+                <h3><i class="bi bi-cash-coin"></i>Instructions</h3>
+                <h3 class="urdu">ضروری ہدا یات<i class="bi bi-calculator"></i></h3>
+            </row>
+        </a>
+    </div>
+    <row class="width-80">
+        <h4>VALUE OF ASSETS ON WHICH ZAKAH HAS TO BE CALCULATED</h4>
+        <p class="urdu">(قابلِ زکٰوۃاثا ثوں کی مالیت)</p>
+    </row>
+    <div class="user-input">
+        <row class="width-80">
+            <h3>1. Gold</h3>
+            <p class="urdu">(سونا)</p>
+        </row>
+        <label for="gold">Gold <span class="urdu">(سونا)</span></label>
+        <input required type="number" class="input" id="gold">
+        <row class="width-80">
+            <h3>2. Silver</h3>
+            <p class="urdu">(چاندی)</p>
+        </row>
+        <label for="silver">Silver <span class="urdu">(چاندی)</span></label>
+        <input required type="number" class="input" id="silver">
+        <row class="width-80">
+            <h3>3. Currency</h3>
+            <p class="urdu">(کرنسی)</p>
+        </row>
+        <label for="local-currency">Local and foreign currency with current rates <span class="urdu"> (ملکی وغیرملکی کرنسی مو جودہ ر یٹ)</span></label>
+        <input required type="number" class="input" id="local-currency">
+        <label for="money-deposited">Money deposited in banks (excluding interest) <span class="urdu"> بینکوں میں جمع شدہ رقم (علاوہ سود)</span></label>
+        <input required type="number" class="input" id="money-deposited">
+        <label for="prize-bonds">Prize Bonds <span class="urdu"> (پرائز بانڈز)</span></label>
+        <input required type="number" class="input" id="prize-bonds">
+        <label for="provident-fund">Money deposited in provident fund <span class="urdu"> (پراویڈ نٹ فنڈ میں جمع شدہ رقم)</span></label>
+        <input required type="number" class="input" id="provident-fund">
+        <label for="commitee">Money deposited in committee <span class="urdu"> (بی سی اور کمیشن میں جمع شدہ رقم)</span></label>
+        <input required type="number" class="input" id="commitee">
+        <row class="width-80">
+            <h3>4. Merchandize</h3>
+            <p class="urdu">(مالِ تجارت)</p>
+        </row>
+        <label for="raw-material">Raw materials in factory etc <span class="urdu"> (خام مال فیکٹری وغیرہ میں)</span></label>
+        <input required type="number" class="input" id="raw-material">
+        <label for="manufactured-goods">Manufactured goods in factory/shop etc <span class="urdu"> (تیار شدہ مال فیکٹری یا دکان وغیرہ میں)</span></label>
+        <input required type="number" class="input" id="manufactured-goods">
+        <label for="plots">Plots, houses or flats for trading <span class="urdu"> (تجارتی پلاٹس، مکان یا فلیٹ)</span></label>
+        <input required type="number" class="input" id="plots">
+        <label for="others"><h4>Business partnership assets on which Zakah is to be calculated </h4><span class="urdu"> (کاروبار میں شراکت کے قابل زکٰوۃاثاثہ جات)</span></label>
+        <input required type="number" class="input" id="others">
+    </div>
+    <p class="center">Thanks For Visiting Regards! Muhammad Ahad&copy;</p>
+    <!-- javascript -->
+    <script src="./main.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

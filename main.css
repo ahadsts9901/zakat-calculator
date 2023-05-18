@@ -1,0 +1,164 @@
+* {
+    font-family: "Poppins", "sans-serif";
+    font-weight: bold;
+}
+
+.urdu {
+    font-family: "Noto Nastaliq Urdu", sans-serif;
+    word-spacing: 0.2em;
+}
+
+body {
+    /* background-color: #212121; */
+    /* color: #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1em;
+    padding: 0em;
+    margin: 0em;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background-color: #212121;
+}
+
+header h3 {
+    color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    font-weight: bold;
+    color: #212121;
+    margin: 0em;
+}
+
+.instructions {
+    line-height: 1em;
+    padding: 0em 1em;
+    width: 90%;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0em;
+    width: 100%;
+    column-gap: 1em;
+}
+
+a p {
+    line-height: 3em;
+    width: 100%;
+    text-align: left;
+    color: #0790b0;
+}
+
+a .urdu {
+    line-height: 4em;
+    width: 100%;
+    text-align: right;
+    color: #0790b0;
+}
+
+a p.urdu {
+    color: #212121;
+}
+
+row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    column-gap: 1em;
+}
+
+column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em;
+    row-gap: 1em;
+}
+
+.user-input {
+    width: 80%;
+    height: 100%;
+    border: 2px dashed #0790b0;
+    padding: 1em 0.3em;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5em;
+}
+
+.width-80 {
+    width: 80%;
+    justify-content: left;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+span.urdu {
+    text-align: right;
+}
+
+.input {
+    color: #212121;
+    background-color: #eaeaea;
+    padding: 0.3em 0.7em;
+    margin: 0em;
+    border: 0px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    height: 3em;
+    width: 70%;
+}
+
+.input::placeholder {
+    color: #dadada;
+}
+
+.button {
+    color: #fff;
+    background-color: #212121;
+    width: 5em;
+    height: 2.5em;
+    border: 0px;
+    border-radius: 15px;
+    font-size: 1.2em;
+    box-shadow: 0px 0px 5px #999;
+}
+
+.center {
+    width: 100%;
+    text-align: center;
+    margin: 3em 0em 2em 0em;
+}
