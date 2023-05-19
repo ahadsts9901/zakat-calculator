@@ -189,6 +189,9 @@ span.urdu {
     width: 70%;
     text-align: center;
     border-left: 10px solid #0790b0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #final-zakat {
@@ -217,8 +220,8 @@ span.urdu {
 }
 
 .button:active {
-    color: #212121;
-    background-color: #0790b0;
+    color: #fff;
+    background-color: #454545;
 }
 
 .center {
