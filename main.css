@@ -18,6 +18,11 @@ body {
     row-gap: 1em;
     padding: 0em;
     margin: 0em;
+    margin-bottom: 2em;
+}
+
+#top {
+    display: none;
 }
 
 header {
@@ -41,6 +46,8 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p {
     font-weight: bold;
     color: #212121;
@@ -59,7 +66,7 @@ a {
     color: #212121;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 0em;
     width: 100%;
@@ -105,6 +112,7 @@ column {
     width: 80%;
     height: 100%;
     border: 2px dashed #0790b0;
+    background-color: #f8f8f8;
     padding: 1em 0.3em;
     border-radius: 16px;
     display: flex;
@@ -116,49 +124,153 @@ column {
 
 .width-80 {
     width: 80%;
-    justify-content: left;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.width-80 h4 {
+    width: 100%;
+    text-align: left;
+}
+
+.width-80 .urdu {
+    width: 100%;
+    text-align: right;
+}
+
+.width-80-10 {
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 label {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-start; */
     width: 70%;
+    font-size: 0.9em;
 }
 
 span.urdu {
     text-align: right;
+    font-size: 0.9em;
+    line-height: 3em;
 }
 
 .input {
     color: #212121;
-    background-color: #eaeaea;
+    background-color: #fff;
     padding: 0.3em 0.7em;
-    margin: 0em;
+    margin: 0em 0em 1em 0em;
     border: 0px;
     font-size: 1.2em;
-    border-radius: 10px;
+    border-radius: 8px;
     height: 3em;
     width: 70%;
+    border-left: 10px solid #0790b0;
 }
 
 .input::placeholder {
-    color: #dadada;
+    color: #cacaca;
+}
+
+.output {
+    color: #212121;
+    background-color: #fff;
+    padding: 0.3em 0.7em;
+    margin: 0em 0em 1em 0em;
+    border: 2px dashed #000;
+    font-size: 1.2em;
+    border-radius: 8px;
+    height: 3em;
+    width: 70%;
+    text-align: center;
+    border-left: 10px solid #0790b0;
+}
+
+#final-zakat {
+    color: #0790b0;
+    background-color: #fff;
+    padding: 0.3em 0.7em;
+    margin: 0em;
+    border: 2px dashed #000;
+    font-size: 1.2em;
+    /* border-radius: 10px; */
+    height: 3em;
+    width: 70%;
+    text-align: center;
 }
 
 .button {
     color: #fff;
     background-color: #212121;
-    width: 5em;
-    height: 2.5em;
+    width: 8em;
+    height: 3em;
     border: 0px;
     border-radius: 15px;
-    font-size: 1.2em;
-    box-shadow: 0px 0px 5px #999;
+    font-size: 1em;
+    margin: 2em 0em;
+    padding: 0.5em 1em;
+}
+
+.button:active {
+    color: #212121;
+    background-color: #0790b0;
 }
 
 .center {
-    width: 100%;
+    width: 80%;
     text-align: center;
-    margin: 3em 0em 2em 0em;
+    margin: 1em 0em 0em 0em;
+}
+
+@media only screen and (max-width: 700px) {
+    .instructions a row {
+        flex-direction: column;
+    }
+    .instructions a row .black {
+        order: 3;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    body,
+    .instructions a row h3,
+    header h3 {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    body,
+    .instructions a row h3,
+    header h3 {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    body,
+    .instructions a row h3,
+    header h3 {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 305px) {
+    body,
+    .instructions a row h3 {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    body,
+    .instructions a row h3,
+    header h3 {
+        font-size: 0.7em;
+    }
 }
