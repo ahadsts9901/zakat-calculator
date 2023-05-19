@@ -111,8 +111,8 @@ column {
 .user-input {
     width: 80%;
     height: 100%;
-    border: 2px dashed #0790b0;
-    background-color: #f8f8f8;
+    /* border: 2px dashed #0790b0; */
+    background-color: #f3f3f3;
     padding: 1em 0.3em;
     border-radius: 16px;
     display: flex;
