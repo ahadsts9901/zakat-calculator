@@ -230,6 +230,44 @@ span.urdu {
     margin: 1em 0em 0em 0em;
 }
 
+.grey-bg {
+    background-color: #f3f3f3;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 1em 0em;
+    padding-bottom: 3em;
+}
+
+.prev,
+.next {
+    background-color: #212121;
+    width: 1.5em;
+    height: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.indicators .slide-button {
+    background-color: #212121;
+    color: #212121;
+    height: 1em;
+    width: 1em;
+    border-radius: 100%;
+}
+
+.width-100 {
+    width: 100%;
+    flex-direction: column;
+}
+
+.side-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
 @media only screen and (max-width: 700px) {
     .instructions a row {
         flex-direction: column;

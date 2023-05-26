@@ -38,80 +38,225 @@
             </row>
         </a>
     </div>
+    <!-- .................................................................................. -->
     <row class="width-80">
         <h4>VALUE OF ASSETS ON WHICH ZAKAH HAS TO BE CALCULATED</h4>
         <p class="urdu">(قابلِ زکٰوۃاثا ثوں کی مالیت)</p>
     </row>
-    <div class="user-input">
-        <row class="width-80-10">
-            <h3>1. Gold</h3>
-            <p class="urdu">(سونا)</p>
-        </row>
-        <label for="gold">Gold <span class="urdu">(سونا)</span></label>
-        <input required type="number" class="input" id="gold" placeholder="Enter Amount">
-        <row class="width-80-10">
-            <h3>2. Silver</h3>
-            <p class="urdu">(چاندی)</p>
-        </row>
-        <label for="silver">Silver <span class="urdu">(چاندی)</span></label>
-        <input required type="number" class="input" id="silver" placeholder="Enter Amount">
-        <row class="width-80-10">
-            <h3>3. Currency</h3>
-            <p class="urdu">(کرنسی)</p>
-        </row>
-        <label for="local-currency">Local and foreign currency with current rates <span class="urdu"> (ملکی وغیرملکی کرنسی مو جودہ ر یٹ)</span></label>
-        <input required type="number" class="input" id="local-currency" placeholder="Enter Amount">
-        <label for="money-deposited">Money deposited in banks (excluding interest) <span class="urdu"> بینکوں میں جمع شدہ رقم (علاوہ سود)</span></label>
-        <input required type="number" class="input" id="money-deposited" placeholder="Enter Amount">
-        <label for="prize-bonds">Prize Bonds <span class="urdu"> (پرائز بانڈز)</span></label>
-        <input required type="number" class="input" id="prize-bonds" placeholder="Enter Amount">
-        <label for="provident-fund">Money deposited in provident fund <span class="urdu"> (پراویڈ نٹ فنڈ میں جمع شدہ رقم)</span></label>
-        <input required type="number" class="input" id="provident-fund" placeholder="Enter Amount">
-        <label for="commitee">Money deposited in committee <span class="urdu"> (بی سی اور کمیشن میں جمع شدہ رقم)</span></label>
-        <input required type="number" class="input" id="commitee" placeholder="Enter Amount">
-        <row class="width-80-10">
-            <h3>4. Merchandize</h3>
-            <p class="urdu">(مالِ تجارت)</p>
-        </row>
-        <label for="raw-material">Raw materials in factory etc <span class="urdu"> (خام مال فیکٹری وغیرہ میں)</span></label>
-        <input required type="number" class="input" id="raw-material" placeholder="Enter Amount">
-        <label for="manufactured-goods">Manufactured goods in factory/shop etc <span class="urdu"> (تیار شدہ مال فیکٹری یا دکان وغیرہ میں)</span></label>
-        <input required type="number" class="input" id="manufactured-goods" placeholder="Enter Amount">
-        <label for="plots">Plots, houses or flats for trading <span class="urdu"> (تجارتی پلاٹس، مکان یا فلیٹ)</span></label>
-        <input required type="number" class="input" id="plots" placeholder="Enter Amount">
-        <label for="others"><h6>Business partnership assets on which Zakah is to be calculated </h6><span class="urdu"> (کاروبار میں شراکت کے قابل زکٰوۃاثاثہ جات)</span></label>
-        <input required type="number" class="input" id="others" placeholder="Enter Amount">
-        <label for="amount-payable"><h6>The amount of total wealth of Zakah </h6><span class="urdu"> کل مال زکٰوۃ(رقم)</span></label>
-        <p class="output" id="amount-payable"></p>
+    <div id="carouselExampleIndicators" class="carousel slide grey-bg">
+        <div class="carousel-indicators indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active slide-button" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="slide-button"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="slide-button"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <row class="width-100">
+                    <h3>Gold & Silver</h3>
+                    <p class="urdu">(سونا اور چاندی)</p>
+                </row>
+
+                <column>
+                    <label for="gold">Gold <span class="urdu">(سونا)</span></label>
+                    <input required type="number" class="input" id="gold" placeholder="Enter Amount">
+
+                    <label for="silver">Silver <span class="urdu">(چاندی)</span></label>
+                    <input required type="number" class="input" id="silver" placeholder="Enter Amount">
+                </column>
+
+
+            </div>
+            <div class="carousel-item">
+
+
+                <row class="width-100">
+                    <h3>Currency</h3>
+                    <p class="urdu">(کرنسی)</p>
+                </row>
+
+                <column>
+                    <label for="local-currency">Local and foreign currency with current rates <span class="urdu"> (ملکی وغیرملکی کرنسی مو جودہ ر یٹ)</span></label>
+                    <input required type="number" class="input" id="local-currency" placeholder="Enter Amount">
+                    <label for="money-deposited">Money deposited in banks (excluding interest) <span class="urdu"> بینکوں میں جمع شدہ رقم (علاوہ سود)</span></label>
+                    <input required type="number" class="input" id="money-deposited" placeholder="Enter Amount">
+                    <label for="prize-bonds">Prize Bonds <span class="urdu"> (پرائز بانڈز)</span></label>
+                    <input required type="number" class="input" id="prize-bonds" placeholder="Enter Amount">
+                    <label for="provident-fund">Money deposited in provident fund <span class="urdu"> (پراویڈ نٹ فنڈ میں جمع شدہ رقم)</span></label>
+                    <input required type="number" class="input" id="provident-fund" placeholder="Enter Amount">
+                    <label for="commitee">Money deposited in committee <span class="urdu"> (بی سی اور کمیشن میں جمع شدہ رقم)</span></label>
+                    <input required type="number" class="input" id="commitee" placeholder="Enter Amount">
+                </column>
+
+
+            </div>
+            <div class="carousel-item">
+
+
+                <row class="width-100">
+                    <h3>Merchandize</h3>
+                    <p class="urdu">(مالِ تجارت)</p>
+                </row>
+
+                <column>
+                    <label for="raw-material">Raw materials in factory etc <span class="urdu"> (خام مال فیکٹری وغیرہ میں)</span></label>
+                    <input required type="number" class="input" id="raw-material" placeholder="Enter Amount">
+                    <label for="manufactured-goods">Manufactured goods in factory/shop etc <span class="urdu"> (تیار شدہ مال فیکٹری یا دکان وغیرہ میں)</span></label>
+                    <input required type="number" class="input" id="manufactured-goods" placeholder="Enter Amount">
+                    <label for="plots">Plots, houses or flats for trading <span class="urdu"> (تجارتی پلاٹس، مکان یا فلیٹ)</span></label>
+                    <input required type="number" class="input" id="plots" placeholder="Enter Amount">
+                    <label for="others"><h6>Business partnership assets on which Zakah is to be calculated </h6><span class="urdu"> (کاروبار میں شراکت کے قابل زکٰوۃاثاثہ جات)</span></label>
+                    <input required type="number" class="input" id="others" placeholder="Enter Amount">
+                </column>
+
+
+            </div>
+
+
+
+        </div>
+        <button class="carousel-control-prev side-buttons" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon prev" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next side-buttons" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon next" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
     </div>
+
+    <!-- .................................................................................. -->
+    <!-- .................................................................................. -->
+
     <row class="width-80">
         <h4>AMOUNT TO BE DEDUCTED FROM TOTAL ZAKAH-ABLE WEALTH (I.E. LIABILITIES)</h4>
         <p class="urdu"> وہ رقم جو مالِ زکوٰۃ سے الگ کرنی ہے</p>
     </row>
-    <div class="user-input">
-        <label for="loan">Loan, if any <span class="urdu"> (اگر قرضہ لیا ہواہے)</span></label>
-        <input required type="number" class="input" id="loan" placeholder="Enter Amount">
-        <label for="dues">Dues instalments on house, shop, things <span class="urdu"> (مکان، دکان اشیا ء کی واجب الاداقسطیں)</span></label>
-        <input required type="number" class="input" id="dues" placeholder="Enter Amount">
-        <label for="remaining-commitee">Remaining payable amount of committee (provided that one has already got the total amount of the committee) <span class="urdu"> (کمیٹی کے بقایاجات جب کےیہ کمیٹی مل چکی ہو)</span></label>
-        <input required type="number" class="input" id="remaining-commitee" placeholder="Enter Amount">
-        <label for="utility-bills">Utility bills such as the bills of gas, electricity etc. provided that one has got the bills before the Zakah year is complete <span class="urdu"> (یوٹیلیٹی بلز، بجلی، گیس وغیرہ اگر سال پورا ہونے سے پہلے آچکے ہوں)</span></label>
-        <input required type="number" class="input" id="utility-bills" placeholder="Enter Amount">
-        <label for="dealers">Payables to Dealers <span class="urdu"> ( پارٹیوں کی ادائیگیاں )</span></label>
-        <input required type="number" class="input" id="dealers" placeholder="Enter Amount">
-        <label for="salaries">Salaries of employees <span class="urdu"> (ملازمین کی تنخواہیں)</span></label>
-        <input required type="number" class="input" id="salaries" placeholder="Enter Amount">
-        <label for="unpaid-zakah">Unpaid Zakah of the previous year <span class="urdu"> (گزشتہ سال کی زکٰوۃجو ادا نہ کی گئی ہو.)</span></label>
-        <input required type="number" class="input" id="unpaid-zakah" placeholder="Enter Amount">
-        <label for="liabilities"><h6>Liabilities </h6><span class="urdu">  (منہاشدہ رقم )</span></label>
-        <p class="output" id="liabilities"></p>
-        <label for="payable-amount-total"><h6>Amount on which Zakah has to be calculated </h6><span class="urdu"> (قابل زکٰوۃرقم )</span></label>
-        <p class="output" id="payable-amount-total"></p>
-        <label for="formula"><h6>Zakah-computing formula: Total amount to be divided by 40 </h6><span class="urdu"> (زکٰوۃ نکالنے کافار مولا : کل رقم کو 40 پر تقسیم کریں)</span></label>
-        <p class="output" id="formula"></p>
-        <button type="submit" class="button" onclick="calculateZakah()">CALCULATE</button>
-        <label for="final-zakat"><h2>FINAL ZAKAH</h2></label>
-        <p class="output" id="final-zakat"></p>
+    <div id="carouselExampleIndicators1" class="carousel slide grey-bg">
+        <div class="carousel-indicators indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active slide-button" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2" class="slide-button"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3" class="slide-button"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <column>
+                    <label for="loan">Loan, if any <span class="urdu"> (اگر قرضہ لیا ہواہے)</span></label>
+                    <input required type="number" class="input" id="loan" placeholder="Enter Amount">
+                    <label for="dues">Dues instalments on house, shop, things <span class="urdu"> (مکان، دکان اشیا ء کی واجب الاداقسطیں)</span></label>
+                    <input required type="number" class="input" id="dues" placeholder="Enter Amount">
+                    <label for="remaining-commitee">Remaining payable amount of committee (provided that one has already got the total amount of the committee) <span class="urdu"> (کمیٹی کے بقایاجات جب کےیہ کمیٹی مل چکی ہو)</span></label>
+                    <input required type="number" class="input" id="remaining-commitee" placeholder="Enter Amount">
+                </column>
+
+            </div>
+
+            <div class="carousel-item">
+
+                <column>
+                    <label for="utility-bills">Utility bills such as the bills of gas, electricity etc. provided that one has got the bills before the Zakah year is complete <span class="urdu"> (یوٹیلیٹی بلز، بجلی، گیس وغیرہ اگر سال پورا ہونے سے پہلے آچکے ہوں)</span></label>
+                    <input required type="number" class="input" id="utility-bills" placeholder="Enter Amount">
+                    <label for="dealers">Payables to Dealers <span class="urdu"> ( پارٹیوں کی ادائیگیاں )</span></label>
+                    <input required type="number" class="input" id="dealers" placeholder="Enter Amount">
+                </column>
+
+            </div>
+
+            <div class="carousel-item">
+
+                <column>
+                    <label for="salaries">Salaries of employees <span class="urdu"> (ملازمین کی تنخواہیں)</span></label>
+                    <input required type="number" class="input" id="salaries" placeholder="Enter Amount">
+                    <label for="unpaid-zakah">Unpaid Zakah of the previous year <span class="urdu"> (گزشتہ سال کی زکٰوۃجو ادا نہ کی گئی ہو.)</span></label>
+                    <input required type="number" class="input" id="unpaid-zakah" placeholder="Enter Amount">
+                </column>
+
+            </div>
+
+
+        </div>
+        <button class="carousel-control-prev side-buttons" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon prev" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next side-buttons" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+          <span class="carousel-control-next-icon next" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- .................................................................................. -->
+    <!-- .................................................................................. -->
+
+    <row class="width-80">
+        <h4>AMOUNT TO BE DEDUCTED FROM TOTAL ZAKAH-ABLE WEALTH (I.E. LIABILITIES)</h4>
+        <p class="urdu"> وہ رقم جو مالِ زکوٰۃ سے الگ کرنی ہے</p>
+    </row>
+    <div id="carouselExampleIndicators2" class="carousel slide grey-bg">
+        <div class="carousel-indicators indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active slide-button" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2" class="slide-button"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3" class="slide-button"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3" aria-label="Slide 4" class="slide-button"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <column>
+                    <label for="amount-payable"><h6>The amount of total wealth of Zakah </h6><span class="urdu"> کل مال زکٰوۃ(رقم)</span></label>
+                    <p class="output" id="amount-payable"></p>
+                </column>
+
+            </div>
+
+            <div class="carousel-item">
+
+                <column>
+                    <label for="liabilities"><h6>Liabilities </h6><span class="urdu">  (منہاشدہ رقم )</span></label>
+                    <p class="output" id="liabilities"></p>
+                </column>
+
+            </div>
+
+            <div class="carousel-item">
+
+                <column>
+                    <label for="payable-amount-total"><h6>Amount on which Zakah has to be calculated </h6><span class="urdu"> (قابل زکٰوۃرقم )</span></label>
+                    <p class="output" id="payable-amount-total"></p>
+                </column>
+
+            </div>
+
+            <div class="carousel-item">
+
+                <column>
+
+                    <label for="formula"><h6>Zakah-computing formula: Total amount to be divided by 40 </h6><span class="urdu"> (زکٰوۃ نکالنے کافار مولا : کل رقم کو 40 پر تقسیم کریں)</span></label>
+                    <p class="output" id="formula"></p>
+                </column>
+
+            </div>
+
+
+        </div>
+        <button class="carousel-control-prev side-buttons" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon prev" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next side-buttons" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+          <span class="carousel-control-next-icon next" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- .................................................................................. -->
+
+
+    <button type="submit" class="button" onclick="calculateZakah()">CALCULATE</button>
+    <label for="final-zakat"><h2>FINAL ZAKAH</h2></label>
+    <p class="output" id="final-zakat"></p>
     </div>
     <a class="center black" href="#top"><i class="bi bi-arrow-up"></i>Go To Top</a>
     <p class="center">Thanks For Visiting Regards! Muhammad Ahad&copy;</p>
