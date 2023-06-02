@@ -1,45 +1,52 @@
 * {
-    font-family: "Poppins", "sans-serif";
-    font-weight: bold;
+  font-family: "Poppins", "sans-serif";
+  font-weight: bold;
 }
 
 .urdu {
-    font-family: "Noto Nastaliq Urdu", sans-serif;
-    word-spacing: 0.2em;
+  font-family: "Noto Nastaliq Urdu", sans-serif;
+  word-spacing: 0.2em;
+}
+
+banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0em;
 }
 
 body {
-    /* background-color: #212121; */
-    /* color: #fff; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 1em;
-    padding: 0em;
-    margin: 0em;
-    margin-bottom: 2em;
+  /* background-color: #212121; */
+  /* color: #fff; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1em;
+  padding: 0em;
+  margin: 0em;
+  margin-bottom: 2em;
 }
 
 #top {
-    display: none;
+  display: none;
 }
 
 header {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 2em;
-    position: sticky;
-    top: 0;
-    z-index: 20;
-    background-color: #212121;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background-color: #212121;
 }
 
 header h3 {
-    color: #fff;
+  color: #fff;
 }
 
 h1,
@@ -49,310 +56,339 @@ h4,
 h5,
 h6,
 p {
-    font-weight: bold;
-    color: #212121;
-    margin: 0em;
+  font-weight: bold;
+  color: #212121;
+  margin: 0em;
 }
 
 .instructions {
-    line-height: 1em;
-    padding: 0em 1em;
-    width: 90%;
+  line-height: 1em;
+  padding: 0em 1em;
+  width: 90%;
 }
 
 a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #212121;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0em;
-    width: 100%;
-    column-gap: 1em;
+  text-decoration: none;
+  font-weight: bold;
+  color: #212121;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0em;
+  width: 100%;
+  column-gap: 1em;
 }
 
 a p {
-    line-height: 3em;
-    width: 100%;
-    text-align: left;
-    color: #0790b0;
+  line-height: 3em;
+  width: 100%;
+  text-align: left;
+  color: #0790b0;
 }
 
 a .urdu {
-    line-height: 4em;
-    width: 100%;
-    text-align: right;
-    color: #0790b0;
+  line-height: 4em;
+  width: 100%;
+  text-align: right;
+  color: #0790b0;
 }
 
 a p.urdu {
-    color: #212121;
+  color: #212121;
 }
 
 row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5em;
-    column-gap: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  column-gap: 1em;
 }
 
 column {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5em;
-    row-gap: 1em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em;
+  row-gap: 1em;
 }
 
 .user-input {
-    width: 80%;
-    height: 100%;
-    /* border: 2px dashed #0790b0; */
-    background-color: #f3f3f3;
-    padding: 1em 0.3em;
-    border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 0.5em;
+  width: 80%;
+  height: 100%;
+  /* border: 2px dashed #0790b0; */
+  background-color: #f3f3f3;
+  padding: 1em 0.3em;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.5em;
 }
 
 .width-80 {
-    width: 80%;
-    justify-content: space-between;
-    flex-direction: column;
+  width: 80%;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .width-80 h4 {
-    width: 100%;
-    text-align: left;
+  width: 100%;
+  text-align: left;
 }
 
 .width-80 .urdu {
-    width: 100%;
-    text-align: right;
+  width: 100%;
+  text-align: right;
 }
 
 .width-80-10 {
-    width: 80%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 label {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: flex-start; */
-    width: 70%;
-    font-size: 0.9em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-start; */
+  width: 70%;
+  font-size: 0.9em;
 }
 
 span.urdu {
-    text-align: right;
-    font-size: 0.9em;
-    line-height: 3em;
+  text-align: right;
+  font-size: 0.9em;
+  line-height: 3em;
 }
 
 .input {
-    color: #212121;
-    background-color: #fff;
-    padding: 0.3em 0.7em;
-    margin: 0em 0em 1em 0em;
-    border: 0px;
-    font-size: 1.2em;
-    border-radius: 8px;
-    height: 3em;
-    width: 70%;
-    border-left: 10px solid #0790b0;
+  color: #212121;
+  background-color: #fff;
+  padding: 0.3em 0.7em;
+  margin: 0em 0em 1em 0em;
+  border: 0px;
+  font-size: 1.2em;
+  border-radius: 8px;
+  height: 3em;
+  width: 70%;
+  border-left: 10px solid #0790b0;
 }
 
 .input::placeholder {
-    color: #cacaca;
+  color: #cacaca;
 }
 
 .output {
-    color: #212121;
-    background-color: #fff;
-    padding: 0.3em 0.7em;
-    margin: 0em 0em 1em 0em;
-    border: 2px dashed #000;
-    font-size: 1.2em;
-    border-radius: 8px;
-    height: 3em;
-    width: 70%;
-    text-align: center;
-    border-left: 10px solid #0790b0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  color: #212121;
+  background-color: #fff;
+  padding: 0.3em 0.7em;
+  margin: 0em 0em 1em 0em;
+  border: 2px dashed #000;
+  font-size: 1.2em;
+  border-radius: 8px;
+  height: 3em;
+  width: 70%;
+  text-align: center;
+  border-left: 10px solid #0790b0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #final-zakat {
-    color: #0790b0;
-    background-color: #fff;
-    padding: 0.3em 0.7em;
-    margin: 0em;
-    border: 2px dashed #000;
-    font-size: 1.2em;
-    /* border-radius: 10px; */
-    height: 3em;
-    width: 70%;
-    text-align: center;
+  color: #0790b0;
+  background-color: #fff;
+  padding: 0.3em 0.7em;
+  margin: 0em;
+  border: 2px dashed #000;
+  font-size: 1.2em;
+  /* border-radius: 10px; */
+  height: 3em;
+  width: 70%;
+  text-align: center;
 }
 
 .button {
-    color: #fff;
-    background-color: #212121;
-    width: 8em;
-    height: 3em;
-    border: 0px;
-    border-radius: 15px;
-    font-size: 1em;
-    margin: 2em 0em;
-    padding: 0.5em 1em;
+  color: #fff;
+  background-color: #212121;
+  width: 8em;
+  height: 3em;
+  border: 0px;
+  border-radius: 15px;
+  font-size: 1em;
+  margin: 2em 0em;
+  padding: 0.5em 1em;
 }
 
 .button:active {
-    color: #fff;
-    background-color: #454545;
+  color: #fff;
+  background-color: #454545;
 }
 
 .center {
-    width: 80%;
-    text-align: center;
-    margin: 1em 0em 0em 0em;
+  width: 80%;
+  text-align: center;
+  margin: 1em 0em 0em 0em;
 }
 
 .grey-bg {
-    background-color: #f3f3f3;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    padding: 1em 0em;
-    padding-bottom: 3em;
+  background-color: #f3f3f3;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding: 1em 0em;
+  padding-bottom: 3em;
 }
 
 .prev,
 .next {
-    background-color: #212121;
-    width: 3em;
-    height: 3em;
-    margin-bottom: 1.5em;
+  background-color: #212121;
+  width: 3em;
+  height: 3em;
+  margin-bottom: 1.5em;
 }
 
 .indicators .slide-button {
-    background-color: #212121;
-    color: #212121;
-    height: 1em;
-    width: 1em;
-    border-radius: 100%;
+  background-color: #212121;
+  color: #212121;
+  height: 1em;
+  width: 1em;
+  border-radius: 100%;
 }
 
 .width-100 {
-    width: 100%;
-    flex-direction: column;
+  width: 100%;
+  flex-direction: column;
 }
 
 .side-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 td {
-    border: 1px dashed #212121;
-    padding: 0.3em 0.5em;
+  border: 1px dashed #212121;
+  padding: 0.3em 0.5em;
 }
 
 table,
 tr {
-    width: 100%;
+  width: 100%;
 }
 
 .inner {
-    width: 100%;
-    text-align: center;
-    margin: 1em 0em;
+  width: 100%;
+  text-align: center;
+  margin: 1em 0em;
 }
 
 #explanation {
-    width: 100%;
-    text-align: left;
-    margin-top: 0.5em;
-    line-height: 2em;
+  width: 100%;
+  text-align: left;
+  margin-top: 0.5em;
+  line-height: 2em;
 }
 
 .yes {
-    width: 90%;
+  width: 90%;
+}
+
+.donate-button {
+  background-color: #0790b0;
+  width: 12em;
+  height: 4em;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  margin: 2em 0em;
+}
+
+.donate-button:hover {
+  color: #fff;
+  background-color: #212121;
 }
 
 @media only screen and (max-width: 700px) {
-    .instructions a row {
-        flex-direction: column;
-    }
-    .instructions a row .black {
-        order: 3;
-    }
+  .instructions a row {
+    flex-direction: column;
+  }
+  .instructions a row .black {
+    order: 3;
+  }
 }
 
 @media only screen and (max-width: 470px) {
-    body,
-    .instructions a row h3,
-    header h3 {
-        font-size: 1em;
-    }
+  body,
+  .instructions a row h3,
+  header h3 {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  banner {
+    padding: 0em;
+  }
+
+  banner img {
+    width: 70%;
+    height: 70%;
+  }
 }
 
 @media only screen and (max-width: 410px) {
-    body,
-    .instructions a row h3,
-    header h3 {
-        font-size: 1em;
-    }
+  body,
+  .instructions a row h3,
+  header h3 {
+    font-size: 1em;
+  }
 }
 
 @media only screen and (max-width: 350px) {
-    body,
-    .instructions a row h3,
-    header h3 {
-        font-size: 0.9em;
-    }
+  body,
+  .instructions a row h3,
+  header h3 {
+    font-size: 0.9em;
+  }
 }
 
 @media only screen and (max-width: 305px) {
-    body,
-    .instructions a row h3 {
-        font-size: 0.8em;
-    }
+  body,
+  .instructions a row h3 {
+    font-size: 0.8em;
+  }
 }
 
 @media only screen and (max-width: 250px) {
-    body,
-    .instructions a row h3,
-    header h3 {
-        font-size: 0.7em;
-    }
+  body,
+  .instructions a row h3,
+  header h3 {
+    font-size: 0.7em;
+  }
 }
 
 @media print {
-    header,
-    .instructions,
-    .no {
-        display: none;
-    }
-    * {
-        font-size: 0.98em;
-    }
-    .yes {
-        display: block;
-    }
+  header,
+  .instructions,
+  .no {
+    display: none;
+  }
+  * {
+    font-size: 0.98em;
+  }
+  .yes {
+    display: block;
+  }
 }
