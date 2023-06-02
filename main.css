@@ -340,6 +340,7 @@ tr {
 @media only screen and (max-width: 425px) {
   banner {
     padding: 0em;
+    padding-top: 1em;
   }
 
   banner img {
