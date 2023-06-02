@@ -320,6 +320,12 @@ tr {
   background-color: #212121;
 }
 
+.total-amount{
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+
 @media only screen and (max-width: 700px) {
   .instructions a row {
     flex-direction: column;
@@ -387,7 +393,14 @@ tr {
     display: none;
   }
   * {
-    font-size: 0.98em;
+    font-size: 0.90em;
+  }
+  banner{
+    padding: 0em;
+  }
+  banner img{
+    width: 50%;
+    height: 50%;
   }
   .yes {
     display: block;
